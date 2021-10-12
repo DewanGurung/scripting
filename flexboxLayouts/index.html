@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
+
+	<!--tag to check the device size, neeed for media queries-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<style>
+				
+		body{
+			font-family: 'Roboto', sans-serif;
+			margin:0;
+		}
+		header{
+			background-color: #000000;
+			/*adding a backgroundd image*/
+			background-image: url("images/moon.jpg");
+			/*sets the bgimage to fill the available space*/
+			background-size: cover;
+			/*sticks it in place*/
+			background-attachment: fixed;
+			/*positions the image in the div8*/
+			background-position: center;
+			
+			
+			
+		
+			
+			
+			color: #C95506;
+			height:50vh;
+			/*this is flexbox element*/
+			display: flex;
+			/*put this in the center of the container*/
+			align-items: center;
+			padding-left: 20px;
+/*			justify-content: center;*/
+		}
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+		
+		.flex-container{
+			display: flex;
+			align-items: stretch;
+		}
+		
+		.flex-container div{
+			background-color: #AD7F0A;
+			margin: 10px;
+			padding:20px
+		}
+		/*set the widths of div*/
+		/********First row********/
+		#item1{
+			flex:25%;
+		}
+		
+		#item1 img{
+			width: 100%;
+		}
+		
+		
+		#item2{
+			flex:50%;
+		}
+		#item3{
+			flex:25%;
+		}
+		
+		/**CSS for buttons**/
+		.btn{
+			background-color: #8A4800;
+			border: none;
+			padding:15px 32px;
+			font-size: 16px;
+			width: 100%;S
+		}
+		/*hover state*/
+		.btn:hover{
+			background-color: #925202;
+			color: white;
+			
+		}
+		
+		
+		
+		
+		/********Second row********/
+		#item4{
+			flex:50%;
+		}
+		
+		#item5{
+			flex:50%;
+		}
+		
+		/********footer********/
+		
+		#item6{
+			flex:25%;
+			/*over write the inherited sttle*/
+			background-color: transparent;
+		}
+		
+		#item7{
+			flex:50%; 
+			background-color: transparent;
+		}
+		
+		#item8{
+			flex:25%;
+			/*over write the inherited sttle*/
+			background-color: transparent;
+		}
+		
+		#item9{
+			flex:25%;
+		}
+		
+		#item10{
+			flex:50%;
+		}
+		#item11{
+			flex:25%;
+		}
+		#item12{
+			flex:25%;
+		}
+			.toc{
+			background-color: #8A4800;
+			border: none;
+			padding:15px 32px;
+			font-size: 16px;
+			width: 100%;S
+		}
+		/*hover state*/
+		.toc:hover{
+			background-color: #925202;
+			color: white;
+			
+		}
+		
+		
+		
+		
+		
+		footer{
+			background-color: #2A0001;
+			padding:50px 0px;
+			color:orange;
+			text-align: center;
+			font-weight: bold;
+		}
+		
+		/*********media query to change the style dor phone******/
+			   /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
+		
+	
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		<!--------------------row 1--------------->
+		<h1>The Page Heading</h1>
+	</header>
+	
+	<div class="flex-container">
+		<div id="item1">
+			<img src="images/person.jpg" alt="creepy person">
+			
+			
+			
+			</div>
+		<div id="item2">
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsa delectus, magni. Accusamus enim, eos repellendus non! Dicta laborum dolorem saepe! Labore officiis velit corrupti ratione modi laudantium consectetur, unde? Aspernatur dolor consequuntur adipisci enim maiores. Necessitatibus sapiente ad ipsam porro. Odit quasi veritatis cum dolorum fugiat harum similique itaque deserunt molestias temporibus ad eius ipsam, maxime molestiae amet tenetur libero quod? Dolores quas asperiores animi fugit, dicta voluptates alias eveniet incidunt eaque unde, facilis, assumenda itaque voluptatum nihil quasi perferendis ea saepe illum maxime rem ab aut provident tenetur! Numquam animi voluptatem deleniti natus! Eos amet, excepturi, hic voluptas incidunt qui! Magnam ab odit, sit fuga, illo iusto optio, qui autem nobis atque, nulla necessitatibus similique hic quasi dolorem?</p>
+		
+		</div>
+		<div id="item3">
+		<!------add some buttons--->
+			<p><button class="btn">Click Me!</button></p>
+			
+			<p><button class="btn">Click Me Too!</button></p>
+		
+		
+		
+		</div>
+	</div> 
+	
+	
+	
+	<div class="flex-container">
+		<div id="item4">
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repellat, deserunt culpa, voluptatibus quae placeat recusandae nemo suscipit omnis eius nisi temporibus porro? Aliquam temporibus exercitationem excepturi iure quasi magnam.</p>
+		
+		
+		</div>
+		<div id="item5">
+		
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime adipisci accusantium quis atque, eum, soluta odit dolores aut odio assumenda maiores, eius non laudantium eveniet.</p>
+		
+		
+		</div>
+		
+	</div>
+	
+	
+	<div class="flex-container">
+		
+		<div id="item9">
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit reprehenderit suscipit eius earum, reiciendis quisquam, alias fuga molestiae doloremque nisi quas, provident illum officia. Unde.</p>
+		
+		</div>
+	
+		<div id="item10"> 
+		 
+			<img src="images/pexels-matheus-bertelli-1789541.jpg" alt="halloween">
+		
+		
+		</div>
+		
+		<div id="item11">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis non nisi accusantium aut numquam possimus voluptate, quia, illum beatae veritatis ad est eaque, culpa asperiores.</p>
+		
+		
+		</div>
+		
+		<div id="item12">
+		  
+			<p><button class="toc"> Touch Me!</button></p>
+			
+			<p><button class="toc"> Touch Me!</button></p>
+		
+		
+		</div>
+	
+	
+	</div>
+	
+	
+	
+	<footer>
+	
+	
+	<div class="flex-container">
+		<div id="item6"></div>
+		<div id="item7">
+		
+		
+			<p>Created by Dewan Gurung</p>
+			<p>	&copy; 2021</p>
+		
+		
+		</div>
+		<div id="item8"></div>
+	</div> 
+	
+	</footer>
+	
+	
+	
+</body>
+</html>

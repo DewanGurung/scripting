@@ -8,11 +8,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Akronim&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap" rel="stylesheet">
 
+	<!--tag to check the device size, neeed for media queries-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	
 	<style>
 				
 		body{
 			font-family: 'Roboto', sans-serif;
+			margin:0;
 		}
 		header{
 			background-color: #000000;
@@ -35,11 +39,12 @@
 		}
 		
 		.flex-container div{
-			background-color:aqua;
+			background-color: #AD7F0A;
 			margin: 10px;
+			padding:20px
 		}
 		/*set the widths of div*/
-		
+		/********First row********/
 		#item1{
 			flex:25%;
 		}
@@ -51,6 +56,8 @@
 			flex:25%;
 		}
 		
+		
+		/********Second row********/
 		#item4{
 			flex:50%;
 		}
@@ -59,7 +66,39 @@
 			flex:50%;
 		}
 		
+		/********footer********/
 		
+		#item6{
+			flex:25%;
+			/*over write the inherited sttle*/
+			background-color: transparent;
+		}
+		
+		#item7{
+			flex:50%; 
+		}
+		
+		#item8{
+			flex:25%;
+			/*over write the inherited sttle*/
+			background-color: transparent;
+		}
+		
+		footer{
+			background-color: #2A0001;
+			padding:50px 0px;
+			
+		}
+		
+		/*********media query to change the style dor phone******/
+		@media(max-width:800px){
+			   /* Responsive layout - makes a one column layout instead of a two-column layout */
+        @media (max-width: 800px) {
+          .flex-container {
+            flex-direction: column;
+          }
+        }
+		}
 	
 	</style>
 </head>
@@ -83,6 +122,18 @@
 		<div id="item4">4</div>
 		<div id="item5">5</div>
 	</div>
+	
+	<footer>
+	
+	
+	<div class="flex-container">
+		<div id="item6">6</div>
+		<div id="item7">7</div>
+		<div id="item8">8</div>
+	</div> 
+	
+	
+	</footer>
 	
 </body>
 </html>
