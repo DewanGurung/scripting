@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+	
+	<!--tag to check the device size, neeed for media queries-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<style>
+				
+		body{
+			font-family: 'Oswald', sans-serif;
+			margin:0;
+			background-color:burlywood;
+			background-image: url("images/forest.jpg");
+			background-attachment: fixed;
+			background-size: cover;
+			
+		}
+		header{
+			
+			color:burlywood;
+			height:50vh;
+			/*this is flexbox element*/
+			display: flex;
+			/*put this in the center of the container*/
+			align-items: center;
+			justify-content: center;
+		}
+		header h1{
+			font-size: 50px;
+			font-family: 'Akronim', cursive;
+		}
+		
+		.flex-container{
+			display: flex;
+			align-items: stretch;
+		}
+		
+		.flex-container div{
+			background-color:burlywood;
+			margin: 10px;
+			padding:20px
+		}
+		/*set the widths of div*/
+		/********First row********/
+		#item1{
+			flex:25%;
+			background-color: transparent;
+		}
+		
+		#item2{
+			flex:50%;
+		}
+		#item3{
+			flex:25%;
+			background-color: transparent;
+		}
+		
+		
+		/********Second row********/
+		#item4{
+			flex:50%;
+		}
+		
+		#item5{
+			flex:50%;
+			background-color:transparent;
+		}
+		
+		#item6{
+			flex:50%;
+			background-color: transparent;
+		}
+		
+		#item8{
+			flex:50%;
+		}
+		/********footer********/
+		
+		#item9{
+			flex:25%;
+			/*over write the inherited sttle*/
+			background-color: transparent;
+		}
+		
+		#item7{
+			flex:50%; 
+		
+		}
+		
+		#item10{
+			flex:25%;
+			/*over write the inherited sttle*/
+			background-color: transparent;
+		}
+		#item11{
+			flex:50%;
+			
+		}
+		
+		#item12{
+			flex:50%;
+			background-color: transparent;
+		}
+		
+		footer{
+			background-color:transparent;
+			padding:50px 0px;
+			color:black;
+			text-align: center;
+			font-weight: bold;
+			
+		}
+		
+		/*********media query to change the style dor phone******/
+		@media(max-width:800px){
+			   /* Responsive layout - makes a one column layout instead of a two-column layout */
+       
+          .flex-container {
+            flex-direction:column-reverse;
+          }
+        }
+		
+	
+	</style>
+</head>
+
+<body>
+	
+	<header>
+		
+		<h1>Dewan Gurung</h1>
+	</header>
+	
+	<div class="flex-container">
+		<div id="item1"></div>
+		<div id="item2">
+		
+		<p>Dewan Gurung is a first-year college student in the multimedia production program focused on (Animation, Coding, Graphic Design). He was born and raised in Nepal before moving to Canada, in his spare time, he loves watching anime, movies and video games. He was inspired by the animation, cutscene and the story in anime and video games.</p>
+			<img src="images/morainelake.jpg" alt="morainelake" width="333" height="500">
+			<img src="images/nepaltemple.jpg" alt="Nepal" width="333" height="500">
+		
+		
+		</div>
+		<div id="item3"></div>
+		
+	</div> 
+	
+	
+	<div class="flex-container">
+		<div id="item4">
+		
+		<p>MY hobbies are learning piano, drawing, playing games and watching anime. I doesn’t play any sport, but I loves baseball. And my favourite music is Nepali music, Indian music and some K-pop and Japanese music, but I will listen to any music if i like it. My favourite place to travel is Japan.</p>
+			<img src="images/redpendantlamps.jpg" alt="redpendantlamps" width="333" height="500">
+			<img src="images/piano.jpg" alt="Piano" width="333" height="500">
+			<img src="images/fushimi.jpg" alt="Fushimi" width="333" height="500">
+			<img src="images/playstation.jpg" alt="playstation" width="333" height="500">
+		
+		
+		
+		</div>
+		<div id="item5"></div>
+		
+		
+	</div>
+	
+	<div class="flex-container">
+		<div id="item6"></div>
+		<div id="item8">
+		
+		<h2>Project That I have done</h2>
+			<img src="images/Space.gif" alt="Space" width="333" height="500">
+			<img src="images/cave.jpg" alt="cave" width="333" height="500">
+		
+		
+		
+		</div>
+	</div>	
+	
+	<div class="flex-container">
+		<div id="item11">
+		
+			<p>
+The first time I starts drawing was in middle school, I was inspired by the Anime characters. And the first time I published something in social media was his first drawing of an Anime character. The things that make me laugh is a TV show call the impractical joker and funny video in YouTube.
+</p>
+		<img src="images/drawing.jpg" alt="Drawing" width="333" height="500">
+			<img src="images/city.jpeg" alt="city" width="333" height="500">
+		</div>
+		<div id="item12"></div>
+	</div>	
+	
+	<footer>
+	
+	
+	<div class="flex-container">
+		<div id="item9"></div>
+		<div id="item7">
+		<p>Created by Dewan Gurung</p>
+			
+			<a href="https://www.instagram.com/oreki2001/" target="_blank">
+	
+		<img src="images/Instagram_icon.png" alt="instagram"></a>
+			
+			<a href="https://www.youtube.com/" target="_blank">
+	
+	
+			
+				<img src="images/youtube_logo.png" alt="YouTube" width="50" height="50"> </a>
+		
+		</div>
+		<div id="item10"></div>
+		
+	</div> 
+	
+	
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*My Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body{
+	/*Remove default spacing*/
+	margin: 0; 
+	padding: 0; 
+	
+	/*set a background colour*/
+	background:#622819; 
+	
+	/*set a default font family*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+h1{
+	/*set a fint for headings*/
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2.5em;/*1 em = 16 px(default size) so 2.5em= 40px*/
+}
+
+
+#header{
+	margin: 0;
+	/*space inside the div*/
+	padding: 100px;
+	
+	/*set a background image*/
+	background-image: url("../images/backgrounds/lights.png");
+	/*set the background image to cover the whole div*/	
+	background-size: cover;
+
+}
+
+#subHead{
+	/*space inside the div*/
+	padding: 100px;
+	
+	/*set margin top and bottom to 0 and auto centered*/
+	margin: 0 auto;
+	/*set a background image*/
+	background-image: url("../images/backgrounds/spring.jpg");
+	/*set the background image to cover the whole div*/
+	background-size: cover;
+	/*make it so the background image doesn't scroll with the page*/
+	background-attachment: fixed;
+	/*set css to look at entire element (padding included) to set size*/
+	box-sizing: border-box;
+	/*set a maximum width of 960px*/
+	max-width: 960px;
+
+}
+
+.sect{
+	
+	background: #FFFFFF; 
+	margin: 0 auto; 
+	padding: 20px; 
+	
+	/*set css to look at entire element (padding included) to set size*/
+	box-sizing: border-box;
+	/*set a maximum width of 960px*/
+	max-width: 960px;
+}
+
+/*psuedo-classes for the links (with rollovers)*/
+a:link, a:visited{
+	color:#B0A33C; 
+	text-decoration: none;
+}
+a:hover{
+	color:red; 
+	text-decoration: underline;
+}
+a:active{
+	color: orangered;
+}
+
+/*------------------------navBar -------------------*/
+nav ul {
+	/*removes the dots from the list item*/
+  list-style-type: none;
+	/*removes default list indentations*/
+  margin: 0;
+  padding: 0;
+	
+  overflow: hidden;
+	/*background color behind lsit*/
+  background-color: #333;
+}
+nav li {
+	
+  float: left;
+}
+nav li a:link {
+	/*make all link box*/
+  display: block;
+	/*text color*/
+  color: white;
+	/*centers text*/
+  text-align: center;
+	/*add spacing*/
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+	color:#000000;
+}
+
+
+
+
+/*----------------------------image gallery-----------------*/
+
+
+
+/*---------------------------Tables------------------------*/
+
