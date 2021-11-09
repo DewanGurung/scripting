@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Charm&display=swap');
+
+
+body{
+	
+	margin: 0; 
+	padding: 0; 
+	background-color: #121212;
+	background-image:url("../images/downtown_2.jpg");
+	background-size:auto;
+	background-attachment:inherit;
+	background-position:top;
+	font-family: 'Charm', cursive;
+	
+}
+
+
+#header{
+	margin: 0;
+
+	padding:100px;
+	
+	background-image: url("../images/bridge-lethbridge.jpg");
+	
+	background-size:cover;
+	
+	color:burlywood;
+			
+			display: flex;
+	
+			align-items: center;
+	
+			padding-left: 20px;
+		    
+	justify-content: center;
+}
+.sect{
+	
+	background: #FFFFFF; 
+	margin:auto; 
+	padding: 30px; 
+	
+	height: 143%;
+
+	box-sizing:border-box;
+	max-width: 960px;
+	overflow: hidden;
+}
+
+a:link, a:visited{color:#979797; text-decoration: none;}
+a:hover{color:burlywood; text-decoration: underline;}
+a:active{color: #F79B41;}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
