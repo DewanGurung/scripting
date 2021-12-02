@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Using Forms</title>
+	
+	<style>
+		
+		body{
+	/*Remove default spacing*/
+	margin: 0; 
+	padding: 0; 
+	
+	/*set a background colour*/
+	background:#622819; 
+	
+	/*set a default font family*/
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+h1{
+	/*set a fint for headings*/
+	font-family: 'Press Start 2P', cursive;
+	font-size: 2.5em;/*1 em = 16 px(default size) so 2.5em= 40px*/
+}
+
+
+#header{
+	margin: 0;
+	/*space inside the div*/
+	padding: 100px;
+	
+	/*set a background image*/
+	background-image: url("../images/backgrounds/lights.png");
+	/*set the background image to cover the whole div*/	
+	background-size: cover;
+
+}
+
+		}
+	
+	
+	
+	
+	</style>
+	
+	
+	
+	
+</head>
+
+<body>
+	
+	<h1>Mad Lib</h1>
+	
+	<p>Please fill out the following form so that you can make a story.</p>
+	
+	<!--the beginning of the form - we will add the function call to hook it up with our JavaScript-->
+	<form action="javascript:write();">
+		
+		<!--simple text field with some added attributes-->
+		
+		<p>
+			<label for="City1">City Name:</label>
+			<input type="text" id="City1" name="City1" required autofocus>
+		</p>
+		
+		<p>
+			<label for="Nou">Noun:</label>
+			<input type="text" id="Nou" name="Nou" required autofocus>
+		</p>
+		
+		
+		<p>
+			<label for="Nou2">Noun2:</label>
+			<input type="text" id="Nou2" name="Nou2" required autofocus>
+		</p>
+		
+		<p>
+		   <label for="Pla">Place:</label>
+			<input type="text" id="Pla" name="Pla" required autofocus>
+		</p>
+		
+		<p> 
+			<label for="rName">Name:</label>
+		   <input type="text" id="rName" name="rName" required autofocus>
+		</p>
+		
+		<p>
+		   <label for="rFood">Food:</label>
+			<input type="text" id="rFood" name="rFood" required autofocus>
+		</p>
+		
+		<p>
+		   <label for="Num">Number:</label>
+			<input type="text" id="Num" name="Num" required autofocus>
+		</p>
+		
+		<p>
+		   <label for="pName">Name of Person:</label>
+		   <input type="text" id="pName" name="pName" required autofocus>
+		</p>
+		
+		<p>
+		   <label for="Adj1">Adjective:</label>
+			<input type="text" id="Adj1" name="Adj1" required autofocus>
+		
+		</p>
+			
+		<p>
+		   <label for="Plac">Place2:</label>
+			<input type="text" id="Plac" name="Plac" required autofocus>
+		</p>
+		
+		<p>
+		   <label for="Adj2">Adjective2:</label>
+			<input type="text" id="Adj2" name="Adj2" required autofocus>
+		
+		</p>
+		
+		<p>
+		   <label for="Occ">Occupation</label>
+			<input type="text" id="Occ" name="Occ" required autofocus>
+		
+		</p>
+		
+		<p>
+		   <label for="Celeb">Celebrity</label>
+			<input type="text" id="Celeb" name="Celeb" required autofocus>
+		
+		</p>
+		
+		
+		<p>
+		   <label for="sport1">Sport</label>
+			<input type="text" id="sport1" name="sport1" required autofocus>
+		
+		</p>
+		
+		<!--the button which will 'submit' the form to the 'form action', which is a call to our JavaScript function-->
+		<p><input type="submit" value="Submit"></p>
+	</form>
+	
+	<div id="output">This is where the output is going.</div>
+	
+	<script>
+		function write(){
+			//this is the function that runs once the form is submitted
+			console.log("It's working");
+			
+			/*variable declartion block -- This is where we create the variables and assign them a value
+			  In this case the value is whatever the user has entered into the input elements*/
+			
+			var City = document.getElementById('City1').value;
+			console.log("City1");
+			
+			var Noun = document.getElementById('Nou').value;
+			console.log("Nou");
+			
+			var Place = document.getElementById('Pla').value;
+			console.log("Place");
+			
+			var Place2 = document.getElementById('Plac').value;
+			console.log("Plac");
+			
+			var Name = document.getElementById('rName').value;
+			console.log("Rname");
+			
+			var Food = document.getElementById('rFood').value;
+			console.log("Food");
+			
+			var Numb = document.getElementById('Num').value;
+			console.log("Number")
+
+			var Name2 = document.getElementById('pName').value;
+			console.log("Pname");
+
+			var Adject2 = document.getElementById('Adj2').value;
+			console.log("Adjective2");
+
+			var Noun2 = document.getElementById('Nou2').value;
+			console.log("Noun");
+
+			var Adject = document.getElementById('Adj1').value;
+			console.log("Adjective");
+			
+			var Occupat = document.getElementById('Occ').value;
+			console.log("Occupat");
+			
+			var Celeb1 = document.getElementById('Celeb').value;
+			console.log("Celebrity");
+			
+			var sport = document.getElementById('sport1').value;
+			console.log("sport1");
+			
+			
+			
+			document.getElementById('output').innerHTML+="<h3> Last summer my friends took us to "+City+". There is so much to do in "+City+" they have "+Noun+" and, exciting "+Place+", theme park, and even the of the location "+Noun2+" and I can`t believe what happened today.</h3>";
+			
+			document.getElementById('output').innerHTML+= "<h3> The next day we ate at the "+Name2+" restaurant it was very delicious and had wide assortment of "+Food+", I only met "+Numb+" people. and then this person named "+Name2+" laughed at my "+Adject2+" outfit.</h3>";
+			
+			document.getElementById('output').innerHTML+= "<h3> Anyway, I did enjoy some of the foods and I met this one "+Occupat+" named "+Celeb1+". This person was super "+Adject+".</h3>";
+			
+			document.getElementById('output').innerHTML+="<h3> We are going to the beach and then watch "+sport+". I like to race and have never been to "+Place2+".</h3>";
+			
+				
+			
+		}
+			
+			</script> 
+			
+	
+	
+</body>
+</html>
