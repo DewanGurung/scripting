@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Strings</title>
+</head>
+
+<body>
+	
+	<h1>String Object</h1>
+	
+	<p>Click the button to learn more about strings.</p>
+	
+	<!--This is the div for our coding feedback-->
+	<div id="output"></div>
+	
+	<button id="btn1">Click Me</button>
+	
+	
+	<script>
+	//this code listens for the button click and calls a function
+	
+	//parameter: which event are your listening for function call	
+	document.getElementById('btn1').addEventListener('click',stringStuff);
+		
+	function stringStuff(){
+		console.log('Yessiree.')
+		
+		//pointer to the div
+		var output=document.getElementById('output');
+		
+		//creating a var that holds a string
+		var myWord="Constantinople";
+		
+		var mySentence ="Another fun this to say is Baluga Blubber.";
+		
+		//check to see if the word sentence has a particular letter
+		
+		output.innerHTML="Does my word start with a C? "+myWord.startsWith('C');
+		
+		output.innerHTML+="<br>Does my sentence start with 'Another'? "+mySentence.startsWith('Another');
+		
+		output.innerHTML+="<br>Change myWord to lowercase: "+myWord.toLocaleLowerCase();
+		
+		output.innerHTML+="<br>Change myWord to uppercase: "+myWord.toUpperCase();
+	}
+	
+	</script>
+	
+	
+</body>
+</html>

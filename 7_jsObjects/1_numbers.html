@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Math Object</title>
+</head>
+
+<body>
+	
+	<h1>Math Object</h1>
+	
+	<p>Click the button to learn more about math.</p>
+	
+	<!--This is the div for our coding feedback-->
+	<div id="output"></div>
+	
+	<button id="btn1">Click Me</button>
+	
+	<script>
+	//this code listens for the button click and calls a function
+	
+	//parameter: which event are your listening for function call	
+	document.getElementById('btn1').addEventListener('click',mathStuff);
+		
+	function mathStuff(){
+		console.log('Yay, it is working.');
+		
+		//pointer to the div
+		var output=document.getElementById('output');
+		
+		//pre-built method PI
+		
+		output.innerHTML="PI is: "+Math.PI;
+		
+		//square root
+		output.innerHTML+="<br>The square of 16 is: "+Math.sqrt(16);
+		
+		//round up number
+		output.innerHTML+="<br>Rounding up 4.53 results in: "+Math.ceil(4.53);
+		
+		//round down a number
+		output.innerHTML+="<br>Rounding down 6.84 results in: "+Math.floor(6.84);
+		
+		//random numbers
+		output.innerHTML+="<br>Create a random number beteewn 0 and 1: "+Math.random();
+		
+		output.innerHTML+="<br>Create a random number beteewn 1 and 10: "+Math.ceil(Math.random()*10);
+		
+		output.innerHTML+="<br>Create a random number beteewn 1 and 10: "+Math.ceil(Math.random()*100);
+	}	
+		
+	</script>
+</body>
+</html>
