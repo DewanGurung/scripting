@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calendar Clock</title>
+	
+	
+	
+</head>
+
+<body>
+	
+	<div id=""></div>
+
+<script>
+	var output=document.getElementById('output');
+			
+		var d=new Date();
+var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+var name = month[d.getMonth()];
+document.getElementById("demo").innerHTML = name;
+	
+var weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+output.innerHTML+=""weekday[d.getDay()];	
+	
+</script>
+	
+	
+	
+</body>
+</html>

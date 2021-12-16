@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<h1>String Object</h1>
+	
+	<p>Click the button to learn more about strings.</p>
+	
+	<!--This is the div for our coding feedback-->
+	<div id="output"></div>
+	
+	<button id="btn1">Click Me</button>
+	
+	<script>
+	//this code listens for the button click and calls a function
+	
+	//parameter: which event are your listening for function call	
+	document.getElementById('btn1').addEventListener('click',dateStuff);
+		
+		function dateStuff(){
+			console.log('Sup.');
+			
+			//pointer to the div
+		var output=document.getElementById('output');
+			
+		var d=new Date();
+			output.innerHTML="What is the day of the month? "+d.getDate();
+			
+			//the year
+			output.innerHTML+="<br>What year is it? "+d.getFullYear();
+			
+			//waht hour is it
+			output.innerHTML+="<br>What hour is it? "+d.getHours();
+			
+			//what minute is it
+			output.innerHTML+="<br>What minute is it? "+d.getMinutes();
+			
+			//what second is it
+			output.innerHTML+="<br>What second is it"+d.getSeconds();
+			//make an array that holds the month names in it
+			var months =["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+			//find the month
+			output.innerHTML+="<br>What month is it? "+months[d.getMonth()];
+		
+		}
+		
+	</script>
+</body>
+</html>

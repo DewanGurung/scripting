@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+}
+
+#showTime{
+	position:relative;
+	font-family: Orbitron;
+	font-size: 90px;
+	background-size:cover;
+	color:#17D4FE;
+	
+   
+}
+
+img{
+	opacity: 100%;
+}
+
+#mDate{
+	position: 100px;
+	left: 50px;
+	top: 50px;
+}
+
+#day{
+	position: 100px;
+	left: 50px;
+	top: 50px;
+}
+
+#mName{
+	position: 1000px;
+left: 100px;
+top: 5px;
+}
+
+#yea{
+	position: 100px;
+	right: 100px;
+	top: 50px;
+
+}
+
+#hou{
+	position: 100px;
+	left: 160px;
+	top: 20px;
+}
+
+#minu{
+	position: relative;
+	left: 120px;
+	top: -103px;
+}
+
+#sec{
+	position: relative;
+	left: 240px;
+	top: -205px;	
+}

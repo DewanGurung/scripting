@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Positioning</title>
+	<style>
+	
+		#parent{
+			background-color: #4A03DA;
+			height: 960px;
+			width: 600px;
+			margin: auto;
+		}
+		
+		.child{
+			height: 50px;
+			width: 50px;
+			position: relative;
+			
+		}
+		#geoff{
+			background-color: burlywood;
+			left: 200px;
+			top: 100px;
+		}
+		
+		#janet{
+			background-color:cornflowerblue;
+			left: 300px;
+			top: 200;
+		}
+		#bill{
+			background-color: gold;
+			left: 400px;
+			top: 300px;
+		}
+	
+	
+	
+	</style>
+	
+	
+	
+	
+</head>
+
+<body>
+	<h1>Relative Positioning</h1>
+	
+	<!-----The parent - outside div - holds other divs-->
+	<div id="parent">
+		<!--divs that are nested are children-->
+		<div id="geoff" class="child">Geoff</div>
+		<div id="janet" class="child">Janet</div>
+		<div id="bill" class="child">Bill</div>
+		
+	
+	</div>
+</body>
+</html>
